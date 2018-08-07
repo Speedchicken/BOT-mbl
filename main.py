@@ -1,9 +1,6 @@
 import discord
 import asyncio
 import random
-import io
-import time
-from discord.ext import commands
 
 
 client = discord.Client()
@@ -11,9 +8,8 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=discord.Game(name='discord.gg/aveuuFS'))
+    await client.change_presence(game=discord.Game(name='MelByLaw em você'))
     print('-------------------------')
-    print('Logged in...')
     print('BOT - online')
     print('Username: ' + str(client.user.name))
     print('Client ID: ' + str(client.user.id))
@@ -127,7 +123,131 @@ async def on_message(message):
     if message.content.lower().startswith('.ping'):
         await client.send_message(message.channel, ":ping_pong: pong!! xD xD")
 
-    if message.content.lower().startswith('.porn'):
+    if message.content.lower().startswith('.sorteio1a4'):
+        choice = random.randint(1, 4)
+        if choice == 1:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476503504895082498/1.png')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 2:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476503503175548929/2.png')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 3:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476503866414727178/3.png')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 4:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476506465293565985/4.png')
+            await client.send_message(message.channel, embed=embed)
+
+    if message.content.lower().startswith('.sorteio1a3'):
+        choice = random.randint(1, 3)
+        if choice == 1:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476503504895082498/1.png')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 2:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476503503175548929/2.png')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 3:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476503866414727178/3.png')
+            await client.send_message(message.channel, embed=embed)
+
+    if message.content.lower().startswith('.sorteio1a2'):
+        choice = random.randint(1, 2)
+        if choice == 1:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476503504895082498/1.png')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 2:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476503503175548929/2.png')
+            await client.send_message(message.channel, embed=embed)
+
+    if message.content.lower().startswith('.moeda'):
+        choice = random.randint(1, 2)
+        if choice == 1:
+            embed = discord.Embed(title="Coroa", description="", color=0xffffff)
+            embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/412586257114464259.png?v=1')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 2:
+            embed = discord.Embed(title="Cara", description="", color=0xffffff)
+            embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/412586256409559041.png?v=1')
+            await client.send_message(message.channel, embed=embed)
+
+    if message.content.lower().startswith('.status'):
+        embed = discord.Embed(title="", description="", color=0xffffff)
+        embed.set_author(name='Informações - discord ----------------------https://discord.gg/aveuuFS', icon_url='https://cdn.discordapp.com/attachments/475391478227664896/475727223194910720/img.png')
+        embed.add_field(name='Status', value='**Hospedado** - ```https://www.heroku.com```\n**BOT** - ```online```\n**Username** - ```MelByLaw```\n**Client ID** - ```39281828************************```\n', inline=False)
+        embed.set_footer(text='bot em execução')
+        await client.send_message(message.channel, embed=embed)
+
+    if message.content.lower().startswith('.ajuda'):
+        embed = discord.Embed(title="", description="", color=0xffffff)
+        embed.set_author(name='Informações BOT MelByLaw', icon_url='https://cdn.discordapp.com/attachments/475391478227664896/475727223194910720/img.png')
+        embed.add_field(name='Comandos', value='.meusegredo\n.status\n.info\n.ping\n')
+        embed.add_field(name='NSFW', value='.pornhelp\n.porn hentai\n.porn analzin', inline=True)
+        embed.add_field(name='Diversão', value='.user (@membro)\n.ship (@membro) (@membro)\n.moeda', inline=True)
+        embed.add_field(name='Sorteio', value='.sorteio1a2\n.sorteio1a3\n.sorteio1a4\n', inline=True)
+        await client.send_message(message.channel, embed=embed)
+
+    if message.content.lower().startswith('.pornhelp'):
+        embed = discord.Embed(title="", description="", color=0xffffff)
+        embed.set_author(name='Informaçoes', icon_url='https://cdn.discordapp.com/attachments/475391478227664896/475727223194910720/img.png')
+        embed.add_field(name='Comandos', value='.pornhelp\n\n.porn hentai\n\n.porn analzin\n\n', inline=False)
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476487848871198720/18.png')
+        embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/476488703431409681/show.png')
+        embed.set_footer(text='ta batendo uma neh... vou conta pra mãe')
+        await client.send_message(message.channel, embed=embed)
+
+    if message.content.lower().startswith('.porn hentai'):
+        choice = random.randint (1, 10)
+        if choice == 1:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB0139.gif')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 2:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_1978.gif')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 3:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_1319.gif')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 4:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_0642.gif')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 5:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB0853.gif')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 6:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_1422.gif')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 7:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_1987.gif')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 8:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_1001.gif')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 9:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_1030.gif')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 10:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB0456.gif')
+            await client.send_message(message.channel, embed=embed)
+
+    if message.content.lower().startswith('.porn analzin'):
         choice = random.randint (1, 10)
         if choice == 1:
             embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
@@ -169,7 +289,6 @@ async def on_message(message):
             embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
             embed.set_image(url='https://cdn.boob.bot/anal/F1CC.jpg')
             await client.send_message(message.channel, embed=embed)
-
 
     if message.content.lower().startswith('.info'):
         embed = discord.Embed(title="", description="", color=0xffffff)
