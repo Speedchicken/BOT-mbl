@@ -127,6 +127,50 @@ async def on_message(message):
     if message.content.lower().startswith('.ping'):
         await client.send_message(message.channel, ":ping_pong: pong!! xD xD")
 
+    if message.content.lower().startswith('.porn'):
+        choice = random.randint (1, 10)
+        if choice == 1:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.boob.bot/anal/BC11.jpg')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 2:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.boob.bot/ass/5073.JPG')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 3:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.boob.bot/ass/4E0C.JPG')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 4:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.boob.bot/anal/14A87.jpg')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 5:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.boob.bot/anal/869C.jpg')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 6:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.boob.bot/ass/4C68.JPG')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 7:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.boob.bot/ass/4C92.JPG')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 8:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.boob.bot/ass/4FEC.JPG')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 9:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.boob.bot/anal/DF57.jpg')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 10:
+            embed = discord.Embed(title="punhetero - DEUS TA VENDO", description="", color=0xffffff)
+            embed.set_image(url='https://cdn.boob.bot/anal/F1CC.jpg')
+            await client.send_message(message.channel, embed=embed)
+
+
     if message.content.lower().startswith('.info'):
         embed = discord.Embed(title="", description="", color=0xffffff)
         embed.add_field(name="Sobre", value="Programado PyCharm\nLinguagem python\ndiscord.py\nDesenvolvido em client\nexe = IDLE python 3.6", inline=True)
@@ -163,7 +207,12 @@ async def on_message(message):
         msg25 = 'Meu penis é enorme :snake: :snake: '
         msg26 = 'Sou feito para casar :heartpulse: :hearts: '
         msg27 = 'Me chama no wpp bb :telephone_receiver: '
-        choice = random.randint (1,21)
+        msg28 = 'Tenho um pau de 30cm :smiling_imp::smiling_imp:'
+        msg29 = 'Ja peguuei muita mulher gostosa :speak_no_evil: :speak_no_evil: '
+        msg30 = 'Ja perdi a conta do tanto de bundas que ja vi ...'
+        msg31 = 'Tenho varios contatinhos :telephone_receiver: :telephone_receiver: '
+        msg32 = 'Ja fui passei pela estrada de barro :poop: :poop:'
+        choice = random.randint (1,32)
         if choice == 1:
             await client.send_message(message.channel, msg1)
         if choice == 2:
@@ -218,5 +267,15 @@ async def on_message(message):
             await client.send_message(message.channel, msg26)
         if choice == 27:
             await client.send_message(message.channel, msg27)
+        if choice == 28:
+            await client.send_message(message.channel, msg28)
+        if choice == 29:
+            await client.send_message(message.channel, msg29)
+        if choice == 30:
+            await client.send_message(message.channel, msg30)
+        if choice == 31:
+            await client.send_message(message.channel, msg31)
+        if choice == 32:
+            await client.send_message(message.channel, msg32)
 
 client.run('MzkyODE4MjgyMTQ0NTk1OTc4.DkeUQQ.NGoqk9tzBfh0FPKzx37WwC87Fr8')
