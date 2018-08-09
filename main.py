@@ -123,6 +123,53 @@ async def on_message(message):
     if message.content.lower().startswith('.ping'):
         await client.send_message(message.channel, ":ping_pong: pong!! xD xD")
 
+    if message.content.lower().startswith('.bomba'):
+        await client.send_message(message.channel, '5')
+        await client.send_message(message.channel, '4')
+        await client.send_message(message.channel, '3')
+        await client.send_message(message.channel, '2')
+        msg000 = await client.send_message(message.channel, "1")
+        await client.add_reaction(message=msg000, emoji="💣")
+        embed = discord.Embed(title="", description="", color=0xffffff)
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476897684788215820/boom.png')
+        await client.send_message(message.channel, embed=embed)
+
+    if message.content.lower().startswith('.bomdia'):
+        choice = random.randint(1, 10)
+        if choice == 1:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/476892247304962058/3.jpg')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 2:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/476892249544982528/4.jpg')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 3:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/476892248252874772/5.jpg')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 4:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/476892257232879616/1.jpg')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 5:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/476892260655693824/2.jpg')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 6:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/476893153765359646/6.jpg')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 7:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/476893178767736832/8.jpg')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 8:
+            embed = discord.Embed(title="", description='', color=0xffffff)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/476893184476053512/9.jpg')
+            await client.send_message(message.channel, embed=embed)
+
+
     if message.content.lower().startswith('.sorteio1a4'):
         choice = random.randint(1, 4)
         if choice == 1:
@@ -168,6 +215,9 @@ async def on_message(message):
             embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476503503175548929/2.png')
             await client.send_message(message.channel, embed=embed)
 
+    if message.content.lower().startswith('.100ideia'):
+        await client.send_message(message.channel, '```100ideia```')
+
     if message.content.lower().startswith('.moeda'):
         choice = random.randint(1, 2)
         if choice == 1:
@@ -184,15 +234,6 @@ async def on_message(message):
         embed.set_author(name='Informações - discord ----------------------https://discord.gg/aveuuFS', icon_url='https://cdn.discordapp.com/attachments/475391478227664896/475727223194910720/img.png')
         embed.add_field(name='Status', value='**Hospedado** - ```https://www.heroku.com```\n**BOT** - ```online```\n**Username** - ```MelByLaw```\n**Client ID** - ```39281828************************```\n', inline=False)
         embed.set_footer(text='bot em execução')
-        await client.send_message(message.channel, embed=embed)
-
-    if message.content.lower().startswith('.ajuda'):
-        embed = discord.Embed(title="", description="", color=0xffffff)
-        embed.set_author(name='Informações BOT MelByLaw', icon_url='https://cdn.discordapp.com/attachments/475391478227664896/475727223194910720/img.png')
-        embed.add_field(name='Comandos', value='.meusegredo\n.status\n.info\n.ping\n')
-        embed.add_field(name='NSFW', value='.pornhelp\n.porn hentai\n.porn analzin', inline=True)
-        embed.add_field(name='Diversão', value='.user (@membro)\n.ship (@membro) (@membro)\n.moeda', inline=True)
-        embed.add_field(name='Sorteio', value='.sorteio1a2\n.sorteio1a3\n.sorteio1a4\n', inline=True)
         await client.send_message(message.channel, embed=embed)
 
     if message.content.lower().startswith('.pornhelp'):
@@ -396,5 +437,15 @@ async def on_message(message):
             await client.send_message(message.channel, msg31)
         if choice == 32:
             await client.send_message(message.channel, msg32)
+
+    if message.content.lower().startswith('.ajuda'):
+        embed = discord.Embed(title="", description="", color=0xffffff)
+        embed.set_author(name='Informações BOT MelByLaw', icon_url='https://cdn.discordapp.com/attachments/475391478227664896/475727223194910720/img.png')
+        embed.add_field(name='Comandos', value='.meusegredo\n.status\n.info\n.ping\n')
+        embed.add_field(name='NSFW', value='.pornhelp\n.porn hentai\n.porn analzin', inline=True)
+        embed.add_field(name='Diversão', value='.user (@membro)\n.ship (@membro) (@membro)\n.moeda', inline=True)
+        embed.add_field(name='Sorteio', value='.sorteio1a2\n.sorteio1a3\n.sorteio1a4\n', inline=True)
+        embed.add_field(name='Inuteis', value='.bomdia\n.bomba\n.100ideia\n', inline=True)
+        await client.send_message(message.channel, embed=embed)
 
 client.run('MzkyODE4MjgyMTQ0NTk1OTc4.DkeUQQ.NGoqk9tzBfh0FPKzx37WwC87Fr8')
