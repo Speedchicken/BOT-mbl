@@ -8,7 +8,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=discord.Game(name='MelByLaw em você'))
+    await client.change_presence(game=discord.Game(name='digite .ajuda'))
     print('-------------------------')
     print('BOT - online')
     print('Username: ' + str(client.user.name))
@@ -215,8 +215,92 @@ async def on_message(message):
             embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/475391478227664896/476503503175548929/2.png')
             await client.send_message(message.channel, embed=embed)
 
-    if message.content.lower().startswith('.100ideia'):
-        await client.send_message(message.channel, '```100ideia```')
+    if message.content.lower().startswith('.totinha'):
+        choice = random.randint(1, 14)
+        if choice == 1:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='O totinha é ...', value='O rei soberano de todos os reinos das trevas \n com suas enormes asas demoniacas voa por ai ...', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 2:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='O totinha é ...', value='O Lorde das TREVAS \n o grande pregador do satanismo', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 3:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='O totinha gosta ...', value='De louvar o capeta \n e abraçar santos', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 4:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='O totinha é ...', value='Um demonio disfarçado de ser humano com uma missão em nosso planeta \n SALVE O LORDE DAS TREVAS', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 5:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='O totinha é ...', value='É ruim em todos os jogos eletronicos existentes no planeta Terra\n ou seja lixinho', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 6:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='O totinha gosta ...', value='O nosso Lorde das Trevas tem uma grande CRUSH, Mirelle \n mas ele a chama de Majestade das Trevas ', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 7:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='O totinha é ...', value='Apenas um garoto que sofre por um amor não correspondido\n MIRELLE não o nota', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 8:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='O totinha é ...', value='Um jovem aprendiz de feitiçaria nordica\n onde invoca capetas e demonios da 20ª camada da DEEP WEB', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 9:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='O totinha é ...', value='Um grande player carregado por seus colegas do discord \n ele passa 24h em um PC para ser ruim em todo jogo mb', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 10:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='MEU NOME NAO É TOTINHA ...', value='MEU NOME É LORDE DAS TREVAS\n COM TODO RESPEITO... AJOELHEM-SE PERANTE A MIM', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 11:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='Curiosidades do totinha ...', value='O totinha tira leite de vaca e em seguida assisti hentai\n ele tambem gosta de porno do Bob Esponja ', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 12:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='Curiosidades do totinha ...', value='Ele é um escravoceta da Mirelle \n e ele tambem tem um colar com M de Mirelle ', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 13:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='Curiosidades do totinha ...', value='Ele tem um colar com um M de Mirelle  \n ou pode ser de MARIA MÃE DE JESUS ... AMEM IRMÃOS ', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480176013792247818/o-mundo-das-trevas-logo.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
+        if choice == 14:
+            embed = discord.Embed(title='', description='', color=0xffffff)
+            embed.add_field(name='Curiosidades do totinha ...', value='O Lorde das Trevas tem um irmão gemêo que ninguem sabe ...\n mas agora vou revelar para todos', inline=False)
+            embed.set_image(url='https://cdn.discordapp.com/attachments/475391478227664896/480192688465903636/irmaos.png')
+            embed.set_footer(text='reality show das trevas')
+            await client.send_message(message.channel, embed=embed)
 
     if message.content.lower().startswith('.moeda'):
         choice = random.randint(1, 2)
@@ -445,7 +529,7 @@ async def on_message(message):
         embed.add_field(name='NSFW', value='.pornhelp\n.porn hentai\n.porn analzin', inline=True)
         embed.add_field(name='Diversão', value='.user (@membro)\n.ship (@membro) (@membro)\n.moeda', inline=True)
         embed.add_field(name='Sorteio', value='.sorteio1a2\n.sorteio1a3\n.sorteio1a4\n', inline=True)
-        embed.add_field(name='Inuteis', value='.bomdia\n.bomba\n.100ideia\n', inline=True)
+        embed.add_field(name='Inuteis', value='.totinha\n.bomba\n.bomdia\n', inline=True)
         await client.send_message(message.channel, embed=embed)
 
 client.run('MzkyODE4MjgyMTQ0NTk1OTc4.DkeUQQ.NGoqk9tzBfh0FPKzx37WwC87Fr8')
