@@ -372,6 +372,36 @@ async def on_message(message):
             embed.set_image(url='https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB0456.gif')
             await client.send_message(message.channel, embed=embed)
 
+    if message.content.lower().startswith('.meupinto'):
+        pinto = 'O seu pinto é desse tamanho !\n```8=D```'
+        pinto1 = 'O seu pinto é desse tamanho !\n```8==D```'
+        pinto2 = 'O seu pinto é desse tamanho !\n```8=====D```'
+        pinto3 = 'O seu pinto é desse tamanho !\n```8=========D```'
+        pinto4 = 'O seu pinto é desse tamanho !\n```8==================D```'
+        pinto5 = 'Você nem tem pinto'
+        pinto6 = 'ENORMOÇAURO\n```8================================================================D```'
+        pinto7 = 'Seu pintinho é piquininim\n``` é tão pequeno que nao aparece```'
+        pinto8 = 'Seu pintinho é finim\n```8--D```'
+        choice = random.randint (1, 8)
+        if choice == 1:
+            await client.send_message(message.channel, pinto1)
+        if choice == 2:
+            await client.send_message(message.channel, pinto2)
+        if choice == 3:
+            await client.send_message(message.channel, pinto3)
+        if choice == 4:
+            await client.send_message(message.channel, pinto4)
+        if choice == 5:
+            await client.send_message(message.channel, pinto)
+        if choice == 6:
+            await client.send_message(message.channel, pinto6)
+        if choice == 7:
+            await client.send_message(message.channel, pinto7)
+        if choice == 8:
+            await client.send_message(message.channel, pinto8)
+        if choice == 9:
+            await client.send_message(message.channel, pinto5)
+
     if message.content.lower().startswith('.porn analzin'):
         choice = random.randint (1, 10)
         if choice == 1:
@@ -527,7 +557,7 @@ async def on_message(message):
         embed.set_author(name='Informações BOT MelByLaw', icon_url='https://cdn.discordapp.com/attachments/475391478227664896/475727223194910720/img.png')
         embed.add_field(name='Comandos', value='.meusegredo\n.status\n.info\n.ping\n')
         embed.add_field(name='NSFW', value='.pornhelp\n.porn hentai\n.porn analzin', inline=True)
-        embed.add_field(name='Diversão', value='.user (@membro)\n.ship (@membro) (@membro)\n.moeda', inline=True)
+        embed.add_field(name='Diversão', value='.user (@membro)\n.ship (@membro) (@membro)\n.moeda\n.meupinto', inline=True)
         embed.add_field(name='Sorteio', value='.sorteio1a2\n.sorteio1a3\n.sorteio1a4\n', inline=True)
         embed.add_field(name='Inuteis', value='.totinha\n.bomba\n.bomdia\n', inline=True)
         await client.send_message(message.channel, embed=embed)
