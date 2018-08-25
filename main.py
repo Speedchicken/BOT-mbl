@@ -486,7 +486,16 @@ async def on_message(message):
         msg30 = 'Ja perdi a conta do tanto de bundas que ja vi ...'
         msg31 = 'Tenho varios contatinhos :telephone_receiver: :telephone_receiver: '
         msg32 = 'Ja fui passei pela estrada de barro :poop: :poop:'
-        choice = random.randint (1,32)
+        msg33 = 'Sou o cafetão do pesqueiro pantanal 😂 😎'
+        msg34 = 'Vejo hentai todo dia 😁 😁'
+        msg35 = 'Gosto de fazer um ballcat 😈 😋'
+        msg36 = 'Amo comer um Lorenzo 😊 😊'
+        msg37 = 'Adoro uma Mirellezinha 😉 😉'
+        msg38 = 'Prefiro animações de pornô 😋 😋'
+        msg39 = 'Eu peso mais que o Matheus e o Léo junto 😂 😂'
+        msg40 = 'Ja fui coelinha da playboy 😚 😂'
+        msg41 = 'Amo engravidar um Lorenzo 😈 😈'
+        choice = random.randint (1,41)
         if choice == 1:
             await client.send_message(message.channel, msg1)
         if choice == 2:
@@ -551,6 +560,24 @@ async def on_message(message):
             await client.send_message(message.channel, msg31)
         if choice == 32:
             await client.send_message(message.channel, msg32)
+        if choice == 33:
+            await client.send_message(message.channel, msg33)
+        if choice == 34:
+            await client.send_message(message.channel, msg34)
+        if choice == 35:
+            await client.send_message(message.channel, msg35)
+        if choice == 36:
+            await client.send_message(message.channel, msg36)
+        if choice == 37:
+            await client.send_message(message.channel, msg37)
+        if choice == 38:
+            await client.send_message(message.channel, msg38)
+        if choice == 39:
+            await client.send_message(message.channel, msg39)
+        if choice == 40:
+            await client.send_message(message.channel, msg40)
+        if choice == 41:
+            await client.send_message(message.channel, msg41)
 
     if message.content.lower().startswith('.ajuda'):
         embed = discord.Embed(title="", description="", color=0xffffff)
